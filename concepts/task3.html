@@ -8,25 +8,78 @@
 <style>
     .container{
         display:flex;
-        flex-direction:column;
         align-items:center;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
         }
+        .cont{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+        a{
+            width:200px;
+            height:20px;
+            background-color: greenyellow;
+            color:white;
+            text-align:center;
+            text-decoration:none;
+            padding:10px;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color: white;
+            color:greenyellow;
+            border:1px solid greenyellow;
+            transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+            transform: scale(1.1);
+        }
+        /* @media screen and (max-width: 600px) {
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+            .cont{
+                margin-bottom: 20px;
+            }
+            a{
+                width: 100%;
+                margin: 0 auto;
+            }
+            
+        } */
+         /* using the flex wrap to wrap the content in the center of the page and also using the flex direction to make it responsive. */
 </style>
 <body>
+    <h1 style="text-align:center; color:rgb(104, 208, 0)">Our Services</h1>
     <div class="container">
-        <h1 style="text-align:center; color:rgb(104, 208, 0)">Our Services</h1>
-        <img src="https://suninfraa.com/wp-content/uploads/2022/01/1-300x300.png" width="100px">
-        <a href="#">
-            constraction Company
-        </a>
+        <div class="cont">
+            <img src="https://suninfraa.com/wp-content/uploads/2022/01/1-300x300.png" width="100px">
+            <a href="#">
+                constraction Company
+            </a>
+        </div>
+       <div class="cont">
         <img src="https://suninfraa.com/wp-content/uploads/2022/01/2-300x300.png" width="100px">
         <a href="#">
             Architecture</a>
-        <img src="https://suninfraa.com/wp-content/uploads/2022/01/3-300x300.png" width="100px">
+       </div>
+        <div class="cont">
+            <img src="https://suninfraa.com/wp-content/uploads/2022/01/3-300x300.png" width="100px">
         <a href="#">Interior Consulting</a>
-        <img src="https://suninfraa.com/wp-content/uploads/2022/01/4-300x300.png" width="100px">
+        </div>
+        <div class="cont">
+            <img src="https://suninfraa.com/wp-content/uploads/2022/01/4-300x300.png" width="100px">
         <a href="#">
             Project Management</a>
+        </div>
+        <p>sample <sub>2</sub>para<sup>78</sup></p>
+        
+        
+        
        
     </div>
     
