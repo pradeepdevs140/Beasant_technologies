@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
 
+  
+</head>
+<style>
+    .blue{
+        background-color:rgb(46, 248, 255);
+    }
+    .yel{
+        background-color:rgb(255, 255, 0);
+    }
+
+</style>
 <body>
-    <table border="1" align="center" width="60%" style=" text-align:center;">
+    <table border="1px" align="center" width="60%" style=" text-align:center;">
         <th>Month</th>
         <th>Saving</th>
         <th>Saving for holiday</th>
@@ -49,7 +59,7 @@
 
 
     </table>
-    <form style="margin: 20px; width:400px; height:500px; border:1px solid; text-align: center; display:block; padding:20px;">
+    <form>
         <label for="month">Month:</label>
         <select>
             <option>January</option>
@@ -76,7 +86,54 @@
      
 
     </form>
-    
+    <table border="1" align="center" style ="font-weight: bold; width: 500px; height:150px;text-align: center;">
+        <th colspan="3">The Table Tile</th>
+        <tr>
+            <td rowspan="2">First Column </td>
+            <td colspan="2">Second Column</td>
+        </tr>
+        <tr>
+            <td>Sub cat A</td>
+            <td>Sub Cat B</td>
+        </tr>
+        <tr>
+            <td>Things 1 </td>
+            <td>A1</td>
+            <td>B1</td>
+        </tr>
+        <tr>
+            <td>Things 2</td>
+            <td>A2</td>
+            <td>B2</td>
+        </tr>
+    </table>
+    <table border="1" align="center" cellpadding="10px" cellspacing="0px" style="width:500px;height:250px; text-align:center;">
+        <th colspan="2">Person</th>
+        <th colspan="2">Department</th>
+        <tr>
+            <td class="blue">Name </td>
+            <td class ="blue"rowspan="4">Photo</td>
+            <td class="yel">name</td>
+            <td class="yel"rowspan="2">image</td>
+        </tr>
+        <tr>
+            <td class="blue">Surname </td>
+            <td class="yel">Structure</td>
+        </tr>
+        <tr>
+            <td class="blue">State</td>
+            <td class="yel">floor</td>
+            <td class ="yel" rowspan="2">Qrcode</td>
+        </tr>
+        <tr>
+            <td class="blue">City</td>
+            <td class="yel">Room</td>
+        </tr>
+        <tr>
+            <td colspan="2">E-mail</td>
+            <td colspan="2">Tel.number</td>
+        </tr>
+    </table>
 
 </body>
 
