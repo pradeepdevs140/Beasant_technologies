@@ -6,14 +6,21 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        display:flex;
+        justify-content: center;    
+        align-items: center;
+
+    }
     form{
+        margin-top: 150px;
         text-align: center;
         border: 1px solid #ccc;
         width: 500px;
-        margin: auto;
+        border-radius: 20px;
+        
     }
     form label{
-        
         margin: 10px 0px;
     }
     form input{
@@ -31,16 +38,16 @@
         color:white;
         border: none;
         border-radius: 10px;
-
     }
 </style>
 <body>
     <form>
+        <h2>Reg Form</h2>
     <label>First Name</label>
     <input type ="text" id="f_name"><br>
     <label>Last Name</label>
     <input type="text" id="l_name"><br>
-    <label>Email</label>
+    <label>Email </label>
     <input type="email " id ="email"><br>
     <label>Password</label>
     <input type="password" id ="pass"><br>
